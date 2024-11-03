@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-	--color-primary: #1f232c;
-	--color-secondary: #dfd6d1;
-	--color-accent: #83746e;
-	--color-background: #ffffff;
-	--color-dark: #2e2e2e;
-	--color-muted: #6b6b6b;
-	--color-light: #e0e0e0;
-	--color-soft: #f7f7f7;
+  --color-primary: #1f232c;
+  --color-secondary: #dfd6d1;
+  --color-accent: #83746e;
+  --color-background: #ffffff;
+  --color-dark: #2e2e2e;
+  --color-muted: #6b6b6b;
+  --color-light: #e0e0e0;
+  --color-soft: #f7f7f7;
 }
 
 /* .dark {
@@ -25,28 +25,28 @@
 } */
 
 @layer base {
-	body {
-		@apply font-secondary text-dark leading-relaxed;
-	}
+  body {
+    @apply font-secondary text-dark leading-relaxed;
+  }
 
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		@apply text-dark font-primary;
-	}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-dark font-primary;
+  }
 
-	.h1 {
-		@apply text-accent text-6xl xl:text-[100px] leading-[1.1] tracking-wider font-semibold;
-	}
+  .h1 {
+    @apply text-accent text-6xl xl:text-[100px] leading-[1.1] tracking-wider font-semibold;
+  }
 
-	.h2 {
-		@apply text-4xl xl:text-[80px] leading-[1.2] font-semibold;
-	}
+  .h2 {
+    @apply text-4xl xl:text-[80px] leading-[1.2] font-semibold;
+  }
 
-	.btn {
-		@apply min-w-[156px] h-[54px] px-6 bg-accent hover:bg-secondary text-soft text-[13px] uppercase font-semibold;
-	}
+  .btn {
+    @apply min-w-[156px] h-[54px] px-6 bg-accent hover:bg-secondary text-soft text-[13px] uppercase font-semibold;
+  }
 }
