@@ -5,7 +5,7 @@ import Separator from "./Separator";
 const Hero = () => {
   return (
     <section className="relative h-[80vh] xl:h-screen text-center">
-      <div className="bg-black z-10 absolute w-full h-full opacity-75 pt-32 px-10">
+      <div className="bg-black z-10 absolute w-full h-full opacity-80 pt-32 px-10">
         <div className="flex gap-5 flex-col items-center">
           <Badge containerStyles="hidden md:flex w-40 h-40" />
           <h1 className="h1 uppercase md:normal-case">
@@ -25,7 +25,7 @@ const Hero = () => {
       </div>
 
       <video
-        className="object-cover absolute top-0 left-0 w-full h-full opacity-20"
+        className="object-cover absolute top-0 left-0 w-full h-full opacity-80"
         autoPlay
         loop
         muted
