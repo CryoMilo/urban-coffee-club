@@ -44,6 +44,11 @@ const Navbar = () => {
     setDropdownOpen(!isDropdownOpen);
   });
 
+  const linkClicked = contextSafe(() => {
+    t1.current.reverse();
+    setDropdownOpen(false);
+  });
+
   return (
     <nav ref={container}>
       <div className="bg-transparent absolute my-3 top-0 left-0 z-40 w-full">
@@ -58,19 +63,19 @@ const Navbar = () => {
                   ? "border-accent transition-all ease-in-out duration-500 delay-300"
                   : "border-white transition-all ease-in-out duration-500 delay-300"
               }
-              open={isDropdownOpen}
             />
           </button>
         </div>
       </div>
       <div
-        className="w-full bg-black z-30 h-[100vh] translate-y-[-100vh] overflow-hidden grid absolute left-0 place-items-center"
+        className="w-full bg-black z-30 h-full translate-y-[-100vh] overflow-hidden grid fixed place-items-center"
         id="dropdown-nav"
       >
         <div className="w-36 flex text-accent font-secondary text-center text-3xl gap-4 flex-col">
           {navLinks.map(({ title, url }, index) => {
             return (
               <Link
+                onClick={linkClicked}
                 className="cursor-pointer hover:text-soft"
                 id="nav-title"
                 href={url}

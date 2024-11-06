@@ -24,6 +24,10 @@
 	--color-soft: #3b3b3b;
 } */
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   body {
     @apply font-secondary text-dark leading-relaxed;

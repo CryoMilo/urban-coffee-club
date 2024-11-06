@@ -3,7 +3,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-const Hamburger = ({ containerStyles = "border-white", open }) => {
+const Hamburger = ({ containerStyles = "border-white" }) => {
   return (
     <div className="w-[30px] flex gap-2 flex-col cursor-pointer">
       <div

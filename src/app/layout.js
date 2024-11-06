@@ -42,7 +42,6 @@ export default function RootLayout({ children }) {
           <Navbar />
           {children}
         </Providers>
-        {/* {children} */}
       </body>
     </html>
   );
