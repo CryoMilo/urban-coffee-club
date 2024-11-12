@@ -33,7 +33,7 @@ const Explore = () => {
   return (
     <div
       id="explore"
-      className="container grid grid-cols-1 select-none md:grid-cols-3 grid-rows-5 md:grid-rows-2 md:min-h-[600px] px-0 py-10 sm:px-10 gap-5"
+      className="container grid grid-cols-1 select-none md:grid-cols-3 grid-rows-5 md:grid-rows-2 min-h-[300px] md:min-h-[600px] px-0 py-20 sm:px-10 gap-5"
     >
       <div className="flex flex-col items-center md:items-end gap-4 self-start p-4 text-black">
         <Image
@@ -49,6 +49,8 @@ const Explore = () => {
           flavors.
         </p>
       </div>
+
+      {/* Middle Image */}
       <div className="md:row-span-2 hidden md:grid place-items-center">
         <div className="relative w-full aspect-square ml-12" ref={coffeeCupRef}>
           <Image
@@ -61,6 +63,7 @@ const Explore = () => {
           />
         </div>
       </div>
+
       <div className="flex flex-col items-center md:items-start self-start gap-4 p-4 text-black">
         <Image
           src="/assets/explore/cup.svg"
@@ -84,9 +87,7 @@ const Explore = () => {
           height={40}
           className="aspect-square"
         />
-        <p className="text-xl text-center md:text-right">
-          Sustainable and Green
-        </p>
+        <p className="text-xl text-center md:text-right">Sustainable</p>
         <p className="text-md text-gray-500 text-center md:text-right">
           We prioritize fair trade and sustainable practices to support
           environment
