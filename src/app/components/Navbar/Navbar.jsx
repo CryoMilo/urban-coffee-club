@@ -8,7 +8,7 @@ import Hamburger from "./Hamburger";
 
 const navLinks = [
   { title: "Explore", url: "#explore" },
-  { title: "About Us", url: "#about-us" },
+  { title: "About Us", url: "#about" },
   { title: "Menu", url: "#menu" },
   { title: "Location", url: "#location" },
 ];
@@ -53,9 +53,11 @@ const Navbar = () => {
     <nav ref={container}>
       <div className="bg-transparent absolute my-3 top-0 left-0 z-40 w-full">
         <div className="container mx-auto flex justify-between w-full items-center">
-          <div className="select-none invisible md:visible text-white font-primary uppercase font-bold text-accent text-3xl">
-            Urban.
-          </div>
+          <Link href="#">
+            <div className="select-none invisible md:visible text-white font-primary uppercase font-bold text-accent text-3xl">
+              Urban.
+            </div>
+          </Link>
           <button className="text-white" onClick={toggleDropdown}>
             <Hamburger
               containerStyles={

@@ -3,7 +3,7 @@ import menuData from "./menu.json";
 
 export default function Menu() {
   return (
-    <section className="bg-secondary">
+    <section id="menu" className="bg-secondary">
       <div className="max-w-5xl mx-auto px-6 py-20">
         <h1 className="text-center text-3xl mb-6 font-primary">OUR MENU</h1>
         {/* Coffee Section */}

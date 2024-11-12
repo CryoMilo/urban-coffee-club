@@ -91,6 +91,7 @@ const About = () => {
 
   return (
     <section
+      id="about"
       className="font-primary bg-white flex flex-col gap-10 lg:gap-0 text-black overflow-hidden my-20"
       ref={containerRef}
     >
