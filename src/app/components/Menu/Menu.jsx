@@ -58,14 +58,14 @@ export default function Menu() {
   return (
     <section id="menu" className="bg-secondary">
       <div className="max-w-5xl mx-auto px-6 py-20">
-        <h1 className="text-center text-3xl mb-6 font-primary">OUR MENU</h1>
+        <h2 className="text-center text-3xl mb-6 font-primary">OUR MENU</h2>
         {/* Coffee Section */}
         <div ref={coffeeContainerRef}>
           <h2 className="text-2xl font-semibold mb-4">COFFEE</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">
             {menuData.coffee.map((item, index) => (
               <div id="menu-card" key={index} className="text-center">
-                <div className="relative w-full aspect-square">
+                <div className="group relative w-full aspect-square">
                   <Image
                     src={item.image}
                     fill
@@ -87,18 +87,18 @@ export default function Menu() {
             <thead>
               <tr>
                 <th className="p-2">Name</th>
-                <th className="p-2 text-center">Hot</th>
-                <th className="p-2 text-center">Ice</th>
+                <th className="p-2 text-right">Hot</th>
+                <th className="p-2 text-right">Ice</th>
               </tr>
             </thead>
             <tbody>
               {menuData.nonCoffee.map((item, index) => (
                 <tr key={index}>
                   <td className="p-2">{item.name}</td>
-                  <td className="p-2 text-center">
+                  <td className="p-2 text-right">
                     {item.hot ? `$${item.hot.toFixed(2)}` : "-"}
                   </td>
-                  <td className="p-2 text-center">
+                  <td className="p-2 text-right">
                     {item.ice ? `$${item.ice.toFixed(2)}` : "-"}
                   </td>
                 </tr>
