@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --color-primary: #1f232c;
   --color-secondary: #dfd6d1;
   --color-accent: #83746e;
@@ -11,6 +11,34 @@
   --color-muted: #6b6b6b;
   --color-light: #e0e0e0;
   --color-soft: #f7f7f7;
+} */
+
+:root {
+  /* Primary Colors */
+  --color-primary: #1f232c; /* Deep Espresso */
+  --color-secondary: #dfd6d1; /* Light Latte */
+  --color-accent: #83746e; /* Dark Mocha */
+
+  /* Background Colors */
+  --color-background: #ffffff; /* Pure White */
+  --color-dark: #2e2e2e; /* Rich Roast */
+  --color-muted: #6b6b6b; /* Mild Cocoa */
+  --color-light: #e0e0e0; /* Light Foam */
+  --color-soft: #f7f7f7; /* Soft Cream */
+
+  /* Additional Colors */
+  --color-highlight: #c18f6b; /* Coffee Bean Highlight */
+  --color-warning: #b85c38; /* Burnt Sienna for Alerts */
+  --color-success: #6b8e23; /* Olive Green for Success Messages */
+  --color-info: #8ea3b0; /* Cool Slate for Info */
+  --color-shadow: #2b1d13; /* Dark Espresso Shadow */
+
+  /* Complementary Tones */
+  --color-cream: #f4e8dc; /* Cream for Light Areas */
+  --color-hazelnut: #d4c2a5; /* Warm Hazelnut */
+  --color-caramel: #b57b54; /* Rich Caramel */
+  --color-chocolate: #3d2c29; /* Dark Chocolate */
+  --color-foam-highlight: #f2ede3; /* Lightest Foam for Highlights */
 }
 
 /* .dark {

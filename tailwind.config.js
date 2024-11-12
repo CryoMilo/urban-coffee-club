@@ -16,15 +16,30 @@ module.exports = {
         padding: "3rem",
       },
       colors: {
-        primary: "var(--color-primary)",
-        secondary: "var(--color-secondary)",
-        accent: "var(--color-accent)",
-        background: "var(--color-background)",
-        dark: "var(--color-dark)",
-        muted: "var(--color-muted)",
-        light: "var(--color-light)",
-        soft: "var(--color-soft)",
+        primary: "var(--color-primary)", // Deep Espresso
+        secondary: "var(--color-secondary)", // Light Latte
+        accent: "var(--color-accent)", // Dark Mocha
+        background: "var(--color-background)", // Pure White
+        dark: "var(--color-dark)", // Rich Roast
+        muted: "var(--color-muted)", // Mild Cocoa
+        light: "var(--color-light)", // Light Foam
+        soft: "var(--color-soft)", // Soft Cream
+
+        // Additional Colors
+        highlight: "var(--color-highlight)", // Coffee Bean Highlight
+        warning: "var(--color-warning)", // Burnt Sienna for Alerts
+        success: "var(--color-success)", // Olive Green for Success Messages
+        info: "var(--color-info)", // Cool Slate for Info
+        shadow: "var(--color-shadow)", // Dark Espresso Shadow
+
+        // Complementary Tones
+        cream: "var(--color-cream)", // Cream for Light Areas
+        hazelnut: "var(--color-hazelnut)", // Warm Hazelnut
+        caramel: "var(--color-caramel)", // Rich Caramel
+        chocolate: "var(--color-chocolate)", // Dark Chocolate
+        "foam-highlight": "var(--color-foam-highlight)", // Lightest Foam for Highlights
       },
+
       fontSize: {
         xs: ".75rem", // 12px
         sm: ".875rem", // 14px
