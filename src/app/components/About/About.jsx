@@ -98,7 +98,7 @@ const About = () => {
         <div
           key={index}
           ref={(el) => (sectionRefs.current[index] = el)}
-          className="grid md:grid-cols-[60px_1fr] mx-20 lg:mx-0 lg:grid-cols-[1fr_80px_1fr] place-items-center opacity-0"
+          className="grid md:grid-cols-[60px_1fr] mx-10 lg:mx-0 lg:grid-cols-[1fr_80px_1fr] place-items-center opacity-0"
         >
           {/* Left Content */}
           <div

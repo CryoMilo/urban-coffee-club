@@ -1,0 +1,36 @@
+{
+  "coffee": [
+    {
+      "name": "Cappuccino",
+      "price": 4.25,
+      "image": "/assets/menu/cappuccino.png"
+    },
+    { "name": "Dirty", "price": 8, "image": "/assets/menu/dirty-coffee.png" },
+    { "name": "Mocha", "price": 5.75, "image": "/assets/menu/mocha.png" },
+    {
+      "name": "Coffee Latte",
+      "price": 6.75,
+      "image": "/assets/menu/latte.png"
+    },
+    {
+      "name": "Americano",
+      "price": 5.5,
+      "image": "/assets/menu/americano.png"
+    },
+    {
+      "name": "Caramel Macchiato",
+      "price": 6,
+      "image": "/assets/menu/caramel-macchiato.png"
+    }
+  ],
+  "nonCoffee": [
+    { "name": "Chocolate", "hot": 4.25, "ice": 5.5 },
+    { "name": "Green Tea Latte", "hot": 6.5, "ice": 7.5 },
+    { "name": "Oolong Milk Tea", "hot": 6, "ice": 7 },
+    { "name": "Peach Tea", "hot": null, "ice": 6.75 },
+    { "name": "Lemon Tea", "hot": null, "ice": 6.75 },
+    { "name": "Strawberry Soda", "hot": null, "ice": 7.5 },
+    { "name": "Lemon Lime Soda", "hot": null, "ice": 7.5 },
+    { "name": "Apple Honey Soda", "hot": null, "ice": 7.5 }
+  ]
+}
