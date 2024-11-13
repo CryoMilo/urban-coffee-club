@@ -43,7 +43,7 @@ const About = () => {
             line,
             { height: "0vh" },
             {
-              height: "30vh",
+              height: "28vh",
               ease: "power1.in",
             },
             ">1"
@@ -58,7 +58,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="font-primary bg-white flex flex-col gap-10 lg:gap-0 text-black overflow-hidden my-20"
+      className="font-primary bg-white flex flex-col gap-3 text-black overflow-hidden my-20"
       ref={containerRef}
     >
       <h2 className="text-center text-3xl mb-6 font-primary">ABOUT US</h2>
