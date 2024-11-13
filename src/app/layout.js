@@ -3,6 +3,7 @@ import "./globals.css";
 import Providers from "../../providers";
 import { Lora, Roboto } from "next/font/google";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <Navbar />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>

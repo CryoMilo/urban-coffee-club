@@ -1,0 +1,14 @@
+{
+  "navigationLinks": [
+    { "name": "Explore", "url": "/#explore" },
+    { "name": "Menu", "url": "/#menu" },
+    { "name": "About", "url": "/#about" },
+    { "name": "Location", "url": "/#location" },
+    { "name": "Contact", "url": "/#contact" }
+  ],
+  "socialLinks": [
+    { "icon": "twitter", "url": "https://twitter.com" },
+    { "icon": "facebook", "url": "https://facebook.com" },
+    { "icon": "instagram", "url": "https://instagram.com" }
+  ]
+}
