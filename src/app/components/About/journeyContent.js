@@ -8,7 +8,7 @@ export const journeyContent = [
       "Our journey began on a small roadside stand, where a passion for coffee and community was first brewed.",
   },
   {
-    imageSrc: "/assets/about/2.png",
+    imageSrc: "/assets/about/4.png",
     imageAlt: "community",
     title: "Building Connections",
     placement: "right",
@@ -24,7 +24,7 @@ export const journeyContent = [
       "As we grew, we began sourcing premium beans and crafting signature blends to elevate the coffee experience.",
   },
   {
-    imageSrc: "/assets/about/4.png",
+    imageSrc: "/assets/about/2.png",
     imageAlt: "community hub",
     title: "A Beloved Destination",
     placement: "right",
