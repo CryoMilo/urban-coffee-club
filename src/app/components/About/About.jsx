@@ -43,7 +43,7 @@ const About = () => {
             line,
             { height: "0vh" },
             {
-              height: "28vh",
+              height: "32vh",
               ease: "power1.in",
             },
             ">1"
