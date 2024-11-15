@@ -58,7 +58,10 @@ module.exports = {
         lg: "960px",
         xl: "1430px",
       },
-      backgroundImage: {},
+      backgroundImage: {
+        "cup-sleeve-gradient":
+          "linear-gradient(to right, #474747 0%, #737272 50.5%, #474747 100%)",
+      },
     },
   },
   darkMode: "class",
