@@ -51,10 +51,10 @@ const Navbar = () => {
 
   return (
     <nav ref={container}>
-      <div className="bg-transparent absolute my-3 top-0 left-0 z-40 w-full">
-        <div className="container mx-auto flex justify-between w-full items-center">
+      <div className="absolute left-0 top-0 z-40 my-3 w-full bg-transparent">
+        <div className="container mx-auto flex w-full items-center justify-between">
           <Link href="#">
-            <div className="select-none invisible md:visible text-white font-primary uppercase font-bold text-accent text-3xl">
+            <div className="invisible select-none font-primary text-3xl font-bold uppercase text-accent text-white md:visible">
               Urban.
             </div>
           </Link>
@@ -70,10 +70,10 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className="w-full bg-black z-30 h-full translate-y-[-100vh] overflow-hidden grid fixed place-items-center"
+        className="fixed z-30 grid h-full w-full translate-y-[-100vh] place-items-center overflow-hidden bg-black"
         id="dropdown-nav"
       >
-        <div className="w-36 flex text-accent font-secondary text-center text-3xl gap-4 flex-col">
+        <div className="flex w-36 flex-col gap-4 text-center font-secondary text-3xl text-accent">
           {navLinks.map(({ title, url }, index) => {
             return (
               <Link

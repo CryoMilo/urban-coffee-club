@@ -3,16 +3,17 @@
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
-
-// Register ScrollTrigger
-gsap.registerPlugin(ScrollTrigger);
+import { useEffect, useRef, useState } from "react";
 
 const Contact = () => {
   const cupRef = useRef(null);
   const cupSleeveRef = useRef(null);
   const containerRef = useRef(null);
   const rollOutCupSleeveRef = useRef(null);
+  const formRef = useRef(null);
+  const t1 = useRef(null);
+
+  const [cupSleeveOpen, setCupSleeveOpen] = useState(false);
 
   useEffect(() => {
     // Check if cupRef and cupSleeveRef are available
@@ -24,26 +25,27 @@ const Contact = () => {
       return;
 
     let ctx = gsap.context(() => {
-      const t1 = gsap.timeline({
+      t1.current = gsap.timeline({
         defaults: { duration: 1 },
-        scrollTrigger: {
-          trigger: containerRef.current,
-          start: "top 80%",
-          end: "bottom 20%",
-          toggleActions: "play none none none", // Play the animation only once
-        },
+        paused: true,
       });
 
       // Add animations to the timeline
-      t1.to(["#container", "#rolled-out-cup-sleeve"], { left: "20%" }).to(
-        "#rolled-out-cup-sleeve",
-        {
-          left: 0,
-          translateX: "20%",
-          width: "75%",
-        },
-        1,
-      );
+      t1.current
+        .to(["#container", "#rolled-out-cup-sleeve"], { left: "30%" })
+        .to(
+          "#rolled-out-cup-sleeve",
+          {
+            left: "10%",
+            translateX: "30%",
+            width: "60%",
+          },
+          1,
+        )
+        .to("#form", {
+          opacity: 1,
+          right: "15%",
+        });
     });
 
     // Cleanup the context on unmount
@@ -84,7 +86,11 @@ const Contact = () => {
         className="absolute left-[50%] top-[53%] h-[30vh] w-[30px] origin-left translate-y-[-50%] rounded-md bg-accent"
       ></div>
 
-      <div className="absolute right-[13%] top-[53%] translate-y-[-50%] bg-transparent">
+      <div
+        id="form"
+        ref={formRef}
+        className="absolute right-[30%] top-[53%] translate-y-[-50%] bg-transparent opacity-0"
+      >
         <div className="grid h-[200px] max-w-md justify-items-end gap-4">
           <div className="flex space-x-4">
             <input
@@ -108,6 +114,18 @@ const Contact = () => {
           </button>
         </div>
       </div>
+
+      {!cupSleeveOpen && (
+        <button
+          onClick={() => {
+            t1.current.play();
+            setCupSleeveOpen(true);
+          }}
+          className="absolute left-[50%] top-[50%] -translate-x-[50%]"
+        >
+          Contact Us
+        </button>
+      )}
     </section>
   );
 };
