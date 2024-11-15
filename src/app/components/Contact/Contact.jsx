@@ -76,14 +76,14 @@ const Contact = () => {
           style={{
             clipPath: "polygon(0 0, 100% 0, 90% 100%, 10% 100%)",
           }}
-          className="absolute left-6 top-[53%] h-[30vh] w-[300px] origin-top translate-y-[-50%] rounded-md bg-accent"
+          className="absolute left-6 top-[53%] h-[30vh] w-[300px] origin-top translate-y-[-50%] rounded-md bg-primary"
         ></div>
       </div>
 
       <div
         id="rolled-out-cup-sleeve"
         ref={rollOutCupSleeveRef}
-        className="absolute left-[50%] top-[53%] h-[30vh] w-[30px] origin-left translate-y-[-50%] rounded-md bg-accent"
+        className="absolute left-[50%] top-[53%] h-[30vh] w-[30px] origin-left translate-y-[-50%] rounded-md bg-primary"
       ></div>
 
       <div
@@ -96,20 +96,20 @@ const Contact = () => {
             <input
               type="text"
               placeholder="Name"
-              className="w-full border-b border-gray-300 bg-transparent px-4 py-2 outline-none focus:border-primary focus:ring-0"
+              className="w-full border-b border-gray-300 bg-transparent px-4 py-2 text-white outline-none focus:border-accent focus:ring-0"
             />
             <input
               type="email"
               placeholder="Email"
-              className="w-full border-b border-gray-300 bg-transparent px-4 py-2 outline-none focus:border-primary focus:ring-0"
+              className="w-full border-b border-gray-300 bg-transparent px-4 py-2 text-white outline-none focus:border-accent focus:ring-0"
             />
           </div>
           <textarea
             placeholder="Your message"
             rows="4"
-            className="w-full resize-none border-b border-gray-300 bg-transparent px-4 py-2 outline-none focus:border-primary focus:ring-0"
+            className="w-full resize-none border-b border-gray-300 bg-transparent px-4 py-2 text-white outline-none focus:border-accent focus:ring-0"
           ></textarea>
-          <button className="w-fit rounded-md bg-primary px-4 py-2 text-white outline-none">
+          <button className="w-fit rounded-md bg-secondary px-4 py-2 text-black outline-none">
             Submit
           </button>
         </div>
@@ -117,11 +117,12 @@ const Contact = () => {
 
       {!cupSleeveOpen && (
         <button
+          id="button"
           onClick={() => {
             t1.current.play();
             setCupSleeveOpen(true);
           }}
-          className="absolute left-[50%] top-[50%] -translate-x-[50%]"
+          className="absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 rounded-full border-[1px] border-white px-4 py-1 font-primary text-xl text-white hover:bg-primary"
         >
           Contact Us
         </button>
