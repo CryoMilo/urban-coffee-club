@@ -3,7 +3,6 @@
     { "name": "Explore", "url": "/#explore" },
     { "name": "Menu", "url": "/#menu" },
     { "name": "About", "url": "/#about" },
-    { "name": "Location", "url": "/#location" },
     { "name": "Contact", "url": "/#contact" }
   ],
   "socialLinks": [

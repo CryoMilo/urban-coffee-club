@@ -8,9 +8,9 @@ import Hamburger from "./Hamburger";
 
 const navLinks = [
   { title: "Explore", url: "#explore" },
-  { title: "About Us", url: "#about" },
   { title: "Menu", url: "#menu" },
-  { title: "Location", url: "#location" },
+  { title: "About Us", url: "#about" },
+  { title: "Contact", url: "#contact" },
 ];
 
 const Navbar = () => {

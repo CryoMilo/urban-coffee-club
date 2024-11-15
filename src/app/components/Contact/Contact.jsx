@@ -55,7 +55,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <section className="relative m-20 h-[60vh]">
+    <section id="contact" className="relative m-20 h-[60vh] scroll-m-20">
       <div
         id="container"
         ref={containerRef}
