@@ -38,13 +38,13 @@ const Contact = () => {
           {
             left: "10%",
             translateX: "30%",
-            width: "60%",
+            width: "57%",
           },
           1,
         )
         .to("#form", {
           opacity: 1,
-          right: "15%",
+          right: "20%",
         });
     });
 
