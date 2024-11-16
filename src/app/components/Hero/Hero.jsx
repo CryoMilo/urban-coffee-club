@@ -1,23 +1,23 @@
-import Image from "next/image";
 import Badge from "./Badge";
+import Music from "./Music";
 import Separator from "./Separator";
 
 const Hero = () => {
   return (
-    <section className="relative h-[80vh] xl:h-screen text-center">
-      <div className="bg-black z-10 absolute w-full h-full opacity-80 pt-32 px-10">
-        <div className="flex gap-5 flex-col items-center">
+    <section className="relative h-[80vh] text-center xl:h-screen">
+      <div className="absolute z-10 h-full w-full bg-black px-10 pt-32 opacity-80">
+        <div className="flex flex-col items-center gap-5">
           <Badge containerStyles="hidden md:flex w-40 h-40" />
           <h1 className="h1 uppercase md:normal-case">
             Urban <span className="text-light">Coffee</span>
           </h1>
           <Separator />
-          <p className="text-secondary font-secondary">
+          <p className="font-secondary text-secondary">
             Start your busy day with a cup of our freshly brewed coffee
           </p>
           <a
             href="#"
-            className="bg-accent uppercase text-white px-8 py-3 mt-12 hover:bg-secondary hover:text-black transition-all duration-500"
+            className="mt-12 bg-accent px-8 py-3 uppercase text-white transition-all duration-500 hover:bg-secondary hover:text-black"
           >
             Explore
           </a>
@@ -25,12 +25,14 @@ const Hero = () => {
       </div>
 
       <video
-        className="object-cover absolute top-0 left-0 w-full h-full opacity-80"
+        className="absolute left-0 top-0 h-full w-full object-cover opacity-80"
         autoPlay
         loop
         muted
         src="/assets/hero/urban-coffee-club-hero.mp4"
       ></video>
+
+      <Music />
     </section>
   );
 };
