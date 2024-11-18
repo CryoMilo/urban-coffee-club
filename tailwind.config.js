@@ -57,6 +57,7 @@ module.exports = {
         md: "768px",
         lg: "960px",
         xl: "1430px",
+        xxl: "1600px",
       },
       backgroundImage: {
         "cup-sleeve-gradient":

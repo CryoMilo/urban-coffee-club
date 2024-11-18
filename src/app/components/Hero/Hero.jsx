@@ -4,8 +4,8 @@ import Separator from "./Separator";
 
 const Hero = () => {
   return (
-    <section className="relative h-[80vh] text-center xl:h-screen">
-      <div className="absolute z-10 h-full w-full bg-black px-10 pt-32 opacity-80">
+    <section className="xxl:h-[40vh] relative h-[80vh] text-center xl:h-screen">
+      <div className="absolute z-10 grid h-full w-full bg-black px-10 pt-32 opacity-80 xl:place-content-center">
         <div className="flex flex-col items-center gap-5">
           <Badge containerStyles="hidden md:flex w-40 h-40" />
           <h1 className="h1 uppercase md:normal-case">

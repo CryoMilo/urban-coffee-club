@@ -52,7 +52,7 @@ const Navbar = () => {
   return (
     <nav ref={container}>
       <div className="absolute left-0 top-0 z-40 my-3 w-full bg-transparent">
-        <div className="container mx-auto flex w-full items-center justify-between">
+        <div className="mx-auto flex w-full items-center justify-between px-5 md:px-10">
           <Link href="#">
             <div className="invisible select-none font-primary text-3xl font-bold uppercase text-accent text-white md:visible">
               Urban.
