@@ -34,7 +34,7 @@ const Music = () => {
   return (
     <div
       onClick={toggleMusic}
-      className="absolute bottom-0 right-0 z-30 cursor-pointer p-4 text-white"
+      className="absolute bottom-0 right-0 z-10 cursor-pointer p-4 text-white"
     >
       {isMusicOff ? <MdMusicOff size={24} /> : <MdMusicNote size={24} />}
       <audio ref={audioRef} autoPlay loop>
